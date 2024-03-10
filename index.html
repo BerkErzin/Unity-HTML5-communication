@@ -2,15 +2,16 @@
   var num = 0;
   function increaseNum(){
     num = num + 1;
+    document.getElementById('displayNum').innerText = num;
   }
   function decreaseNum(){
     num = num - 1;
   }
 </script>
 <body>
-  <h1>Hello!Test</h1>
+  <h1>Hello!</h1>
   <label id="displayNum">
-    num
+    0
   </label>
   <button onclick=inceaseNum()>Increase</button>
   <button onclick=descreaseNum()>Decrease</button>
