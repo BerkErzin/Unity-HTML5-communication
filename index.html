@@ -6,6 +6,7 @@
   }
   function decreaseNum(){
     num = num - 1;
+	document.getElementById('displayNum').innerText = num;
   }
 </script>
 <body>
@@ -13,7 +14,7 @@
   <label id="displayNum">
     0
   </label>
-  <button onclick=inceaseNum()>Increase</button>
-  <button onclick=descreaseNum()>Decrease</button>
+  <button onclick=increaseNum()>Increase</button>
+  <button onclick=decreaseNum()>Decrease</button>
 </body>
 
