@@ -8,6 +8,13 @@
     num = num - 1;
 	document.getElementById('displayNum').innerText = num;
   }
+  function recieveNum(receivedNum){
+	num = receivedNum;
+	document.getElementById('displayNum').innerText = num;
+  }
+  function returnNum(){
+	return num;
+  }
 </script>
 <body>
   <h1>Hello!</h1>
@@ -16,5 +23,6 @@
   </label>
   <button onclick=increaseNum()>Increase</button>
   <button onclick=decreaseNum()>Decrease</button>
+  <button onclick=recieveNum(12)>Recieve</button>
 </body>
 
